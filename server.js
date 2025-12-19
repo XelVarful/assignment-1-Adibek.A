@@ -7,58 +7,58 @@ const app = express();
 const port = 3000;
 const dataFilePath = path.join(__dirname, 'data.json');
 
-
+// Middleware для парсинга JSON
 app.use(express.json());
 
-
+// Проверка, существует ли файл данных
 const checkFileExistence = () => {
   if (!fs.existsSync(dataFilePath)) {
     fs.writeFileSync(dataFilePath, JSON.stringify({ books: [] }, null, 2));
   }
 };
 
-
+// Чтение данных из JSON файла
 const readData = () => {
   checkFileExistence();
   const rawData = fs.readFileSync(dataFilePath);
   return JSON.parse(rawData);
 };
 
-
+// Запись данных в JSON файл
 const writeData = (data) => {
   fs.writeFileSync(dataFilePath, JSON.stringify(data, null, 2));
 };
 
-// Роуты
+// Демонстрационные маршруты
 
-
+// Главная страница
 app.get('/', (req, res) => {
   res.send('Server is running');
 });
 
-
+// Приветствие
 app.get('/hello', (req, res) => {
-  res.json({ message: 'Hello server' });
+  res.json({ message: 'Hello server!' });
 });
 
-
+// Текущее время
 app.get('/time', (req, res) => {
   const currentTime = new Date().toISOString();
   res.json({ time: currentTime });
 });
 
-
+// Статус
 app.get('/status', (req, res) => {
-  res.status(200).json({ status: 'OK', message: 'Server is running smoothly' });
+  res.status(200).json({ status: 'OK', message: 'Salamaleikum' });
 });
 
-
+// Получить все книги
 app.get('/books', (req, res) => {
   const data = readData();
   res.json(data.books);
 });
 
-
+// Добавить новую книгу
 app.post('/books', (req, res) => {
   const { name, author, published, genre } = req.body;
   if (!name || !author || !published) {
@@ -80,7 +80,7 @@ app.post('/books', (req, res) => {
   res.status(201).json(newBook);
 });
 
-
+// Обновить книгу по ID
 app.put('/books/:id', (req, res) => {
   const { id } = req.params;
   const { name, author, published, genre } = req.body;
@@ -102,7 +102,7 @@ app.put('/books/:id', (req, res) => {
   res.json(data.books[bookIndex]);
 });
 
-
+// Удалить книгу по ID
 app.delete('/books/:id', (req, res) => {
   const { id } = req.params;
 
@@ -119,7 +119,7 @@ app.delete('/books/:id', (req, res) => {
   res.json({ success: true });
 });
 
-
+// Запуск сервера
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
 });
