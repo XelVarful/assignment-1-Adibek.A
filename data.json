@@ -1,0 +1,25 @@
+{
+  "books": [
+    {
+      "id": "5c9b36b0-f8c7-468a-bc95-ca77ec2a81a7",
+      "name": "1984",
+      "author": "George Orwell",
+      "published": 1949,
+      "genre": "Dystopian"
+    },
+    {
+      "id": "df9c997f-8d38-4fb3-88cd-dec7fdc61c49",
+      "name": "1984",
+      "author": "George Orwell",
+      "published": 1949,
+      "genre": "Dystopian"
+    },
+    {
+      "id": "846e767d-9e7a-401f-8843-9e24766f299e",
+      "name": "1984",
+      "author": "George Orwell",
+      "published": 1949,
+      "genre": "Dystopian"
+    }
+  ]
+}
