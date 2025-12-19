@@ -10,14 +10,14 @@ This project is an API for managing books, implemented using **Node.js** and **E
 
 ## List of API routes:
 
-GET /
-GET /hello
-GET /time
-GET /status
-GET /books
-POST /books
-PUT /books/:id
-DELETE /books/:id
+ - **GET /**
+ - **GET /hello**
+ - **GET /time**
+ - **GET /status**
+ - **GET /books**
+ - **POST /books**
+ - **PUT /books/:id**
+ - **DELETE /books/:id**
 
 ### How to install dependencies
 
