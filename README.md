@@ -8,6 +8,23 @@ This project is an API for managing books, implemented using **Node.js** and **E
 - **Express**: Framework for building web applications on Node.js.
 - **UUID**: Library for generating unique identifiers for books.
 
+## List of API routes:
+
+GET /
+GET /hello
+GET /time
+GET /status
+GET /books
+POST /books
+PUT /books/:id
+DELETE /books/:id
+
+### How to install dependencies
+
+To install the required project dependencies (you need to install nodejs before doing this command), open the terminal in the project directory and run:
+```
+npm install
+```
 ## Running the Server
 
 To start the server, run the following command:
