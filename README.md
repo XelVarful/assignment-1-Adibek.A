@@ -37,7 +37,8 @@ Response Example:
     "genre": "Dystopian"
   }
 ```
-![Uploading Снимок экрана 2025-12-19 в 16.13.57.png…]()
+<img width="1275" height="738" alt="Снимок экрана 2025-12-19 в 16 25 28" src="https://github.com/user-attachments/assets/9b0ba254-363f-4ef3-84e5-e7447c0e9fb0" />
+
 
 ### 2. POST /books
 
