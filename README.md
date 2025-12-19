@@ -69,6 +69,8 @@ Response Example:
   "genre": "Dystopian"
 }
 ```
+<img width="1287" height="795" alt="Снимок экрана 2025-12-19 в 16 26 24" src="https://github.com/user-attachments/assets/85b4aa20-8077-4582-8987-30c27f5de756" />
+
 ### 3. PUT /books/:id
 
 Update the data of a book by its ID. The request body should contain the updated book data.
@@ -100,6 +102,8 @@ Response Example:
 }
 
 ```
+<img width="1281" height="802" alt="Снимок экрана 2025-12-19 в 16 27 05" src="https://github.com/user-attachments/assets/ae50c3d6-cffe-4e82-ad5f-5ed6a2ebf1c9" />
+
 ### 4. DELETE /books/:id
 
 Delete a book by its ID. After deletion, a success confirmation will be returned.
@@ -116,6 +120,7 @@ Response Example:
   "success": true
 }
 ```
+<img width="1281" height="801" alt="Снимок экрана 2025-12-19 в 16 27 51" src="https://github.com/user-attachments/assets/b6e50ef2-d941-4254-bd1b-3a2434ddef61" />
 
 
 
