@@ -17,6 +17,7 @@ const checkFileExistence = () => {
   }
 };
 
+
 // Чтение данных из JSON файла
 const readData = () => {
   checkFileExistence();
