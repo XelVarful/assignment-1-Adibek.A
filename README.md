@@ -15,8 +15,17 @@ To start the server, run the following command:
 ```node server.js```
 
 The server will be available at http://localhost:3000
+## Part 1 create demo route 
+### hello
+<img width="856" height="336" alt="Снимок экрана 2025-12-19 в 16 37 59" src="https://github.com/user-attachments/assets/1579b28b-09bf-48bc-b65d-e25020b394cc" />
 
-## API Routes
+### time 
+<img width="861" height="342" alt="Снимок экрана 2025-12-19 в 16 39 02" src="https://github.com/user-attachments/assets/683f0bdd-5a16-4d8c-9a19-52616f42fe52" />
+
+### Status
+<img width="856" height="368" alt="Снимок экрана 2025-12-19 в 16 41 03" src="https://github.com/user-attachments/assets/f0798b44-15e2-4571-81b9-3b0bfa634137" />
+
+## Part 2 API Routes
 ### 1. GET /books
 
 Retrieve all books. On a successful request, it will return a list of all the books in JSON format.
